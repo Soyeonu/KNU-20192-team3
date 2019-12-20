@@ -46,7 +46,7 @@ category = filters.find_element_by_class_name("category")
 li_elem = category.find_elements_by_tag_name("li")
 majorname=input("찾아볼 전공을 입력하세요:")
 major = category.find_element_by_xpath('//li[contains(text(), "'+majorname+'")]')
-driver.execute_script("arguments[0].click();", major)# 컴퓨터학부
+driver.execute_script("arguments[0].click();", major)#전공 클릭
 time.sleep(2)
 list = driver.find_element_by_class_name("list")
 body = list.find_element_by_tag_name("tbody")
